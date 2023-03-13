@@ -1,4 +1,4 @@
-const keyboardkeys = [
+export const firstrow = [
     {id: 1, keys: '1'},
     {id: 2, keys: '2'},
     {id: 3, keys: '3'},
@@ -11,6 +11,9 @@ const keyboardkeys = [
     {id: 0, keys: '0'},
     {id: 10, keys: '='},
     {id: 11, keys: 'Backspace'},
+]
+
+export const secondrow = [    
     {id: 12, keys: 'Tab'},
     {id: 13, keys: 'Q'},
     {id: 14, keys: 'W'},
@@ -24,7 +27,10 @@ const keyboardkeys = [
     {id: 22, keys: 'P'},
     {id: 23, keys: '{'},
     {id: 24, keys: '}'},
-    {id: 25, keys: '|'},
+    {id: 25, keys: '|'}
+]
+
+export const thirdrow = [
     {id: 26, keys: 'Caps'},
     {id: 27, keys: 'A'},
     {id: 28, keys: 'S'},
@@ -39,6 +45,9 @@ const keyboardkeys = [
     {id: 37, keys: '"'},
     {id: 38, keys: 'Enter'},
     {id: 39, keys: 'Shift'},
+]
+
+export const fouthrow = [
     {id: 40, keys: 'Z'},
     {id: 41, keys: 'X'},
     {id: 42, keys: 'C'},
@@ -50,6 +59,9 @@ const keyboardkeys = [
     {id: 48, keys: '>'},
     {id: 49, keys: '?'},
     {id: 50, keys: 'Shift'},
+]
+
+export const fifthrow =[
     {id: 51, keys: 'Ctrl'},
     {id: 52, keys: 'Win'},
     {id: 53, keys: 'Alt'},
@@ -61,6 +73,3 @@ const keyboardkeys = [
 
 ]
 
-
-
-export default keyboardkeys
