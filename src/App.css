@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    transition: .4s;
+    background-color: black;
+}
+body.bg-change{
+    background-color: rgb(0, 255, 106);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 10px;flex-direction: column;
+}
+.keyboardWrap{
+    max-width: 1008px;
+    width: 100%;
+    background-color: #C0C0C0;
+    overflow: hidden;
+    position: relative;
+    order: 2;
+}
+.keyboardWrap.active{
+    background-color: #C0C0C0;
+}
+.rows{
+    display: flex;
+}
+.keys{
+    width: 80px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    z-index: 5;
+}
+.keys:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+}
+
+.keys.remove{
+    animation: keys_animation 0.5s forwards;
+}
+.key11{width: 120px;}.key12{width: 90px;}.key25{width: 90px;}.key26{width: 128px;}.key38{width: 120px;}.key39{width: 124px;}.key50{width: 124px;}.key54{max-width: 400px; width: 100%;} .key58{width: 90px;}
+.text{
+    max-width: 1008px;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    transition: .2s;
+    background-color: f7f7f7;
+}
+.night-mode{
+    width: 80px;
+    height: 30px;
+    background-color: #e6e6e6;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.night-mode.active{
+    background-color: white;
+    /* left: 60%; */
+}
+
+.toggle-circle{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 50px;
+    margin: 0 5px;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+}
+.toggle-circle.active{
+    left: 60%;
+    background-color: black;
+}
+.change_light_color{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colors_input{
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.change_light_color.night{
+    background-color: slategray;
+}
+.keyboard-lights{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
